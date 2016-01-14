@@ -29,6 +29,7 @@ before_script:
 - lcov --directory . --zerocounters
 script:
 - cd ${TRAVIS_BUILD_DIR}
+# Check that this works this way
 - cmake .
 - make
 - ctest --verbose
