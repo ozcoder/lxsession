@@ -142,7 +142,8 @@ AC_ARG_ENABLE(debug,
 )
 if test "$enable_debug" = "yes"; then
     # turn on debug and disable optimization
-    CPPFLAGS="$CPPFLAGS -DG_ENABLE_DEBUG -O0 -g --coverage"
+    CPPFLAGS="$CPPFLAGS -DG_ENABLE_DEBUG -O0 -g --coverage -fprofile-arcs -ftest-coverage"
+    CFLAGS="$CFLAGS --coverage -fprofile-arcs -ftest-coverage"
 else
     # turn off glib debug checks
     CPPFLAGS="$CPPFLAGS -DG_DISABLE_ASSERT -DG_DISABLE_CHECKS -DG_DISABLE_CAST_CHECKS"

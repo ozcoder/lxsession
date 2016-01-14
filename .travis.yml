@@ -44,7 +44,7 @@ script:
 # Check that this works this way
 - intltoolize --force
 - ./autogen.sh
-- ./configure --enable-man
+- ./configure --enable-man --enable-debug
 - make
 # ctest --verbose
 after_success:
