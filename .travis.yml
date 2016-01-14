@@ -17,11 +17,11 @@ install:
 - sudo apt-get -qq install gcc-4.9 g++-4.9
 - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
 - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
-- sudo apt-get install libdbus-glib-1-dev
-- sudo apt-get install libunique-dev
-- sudo apt-get install intltool
-- sudo apt-get install libpolkit-agent-1-dev
-- sudo apt-get install valac
+- sudo apt-get -qq install libdbus-glib-1-dev
+- sudo apt-get -qq install libunique-dev
+- sudo apt-get -qq install intltool
+- sudo apt-get -qq install libpolkit-agent-1-dev
+- sudo apt-get -qq install valac
 - valac --version
 # install latest LCOV (1.9 was failing)
 - cd ${TRAVIS_BUILD_DIR}
