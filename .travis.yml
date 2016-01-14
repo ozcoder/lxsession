@@ -40,7 +40,7 @@ script:
 # Check that this works this way
 - intltoolize --force
 - ./autogen.sh
-- ./configure
+- ./configure --enable-man
 - make
 # ctest --verbose
 after_success:
