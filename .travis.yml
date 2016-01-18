@@ -23,6 +23,7 @@ install:
 - sudo apt-get -qq install libpolkit-agent-1-dev
 - sudo apt-get -qq install valac
 - valac --version
+- sudo apt-get -qq install libgtk-3-dev
 # Man page dependecies
 - sudo apt-get -qq install xsltproc
 - sudo apt-get -qq install docbook-xsl
